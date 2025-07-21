@@ -1,0 +1,22 @@
+# Ignore Windows executable files
+*.exe
+
+# Ignore object files
+*.o
+
+# Ignore static and dynamic libraries
+*.a
+*.lib
+*.so
+*.dll
+
+# Ignore build directories (common names)
+build/
+bin/
+out/
+
+# Ignore dependency files
+*.d
+
+# Ignore core dumps
+core
