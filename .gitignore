@@ -17,6 +17,7 @@ out/
 
 # Ignore dependency files
 *.d
+test.c
 
 # Ignore core dumps
 core
