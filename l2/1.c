@@ -1,4 +1,4 @@
-/*Crete a 1 D array of n elements[use ptr to array]
+/*Create a 1 D array of n elements[use ptr to array]
 perform operations using switch case
 a) Insert at specific postiton
 b) Linear search an element
