@@ -1,4 +1,4 @@
-/*calculate transporse of the given sparse matrix in 3 tuple format
+/*calculate transporse of the given sparse matrix in 3 tuple format    
 2D ->   sparse 0 0 33 
         matrix 1 1 17
         truple 2 3 46
