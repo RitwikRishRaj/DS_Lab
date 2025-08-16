@@ -13,7 +13,7 @@ int main() {
         {2, 3, 46},
         {3, 3, 51}
     };
-
+    
     int rows = 4;
     int cols = 4;
 
