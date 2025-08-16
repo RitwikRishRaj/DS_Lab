@@ -13,11 +13,7 @@ Enter sparse matrix-2 in 3-tuple format
 1 1 65
 2 3 12
 3 3 71
-
 */
-
-
-
 
 #include <stdio.h>
 
@@ -44,7 +40,6 @@ int main() {
         return 0;
     }
     
-    // Copy A to result
     for(int i = 0; i < m; i++) {
         c[k][0] = a[i][0];
         c[k][1] = a[i][1];
@@ -52,7 +47,6 @@ int main() {
         k++;
     }
     
-    // Add B elements
     for(int i = 0; i < n; i++) {
         int found = 0;
         for(int j = 0; j < k; j++) {
@@ -70,7 +64,7 @@ int main() {
         }
     }
     
-    // Print result in normal matrix form
+    // Printing in normal mat form
     printf("\nResultant Matrix:\n");
     for(int i = 0; i < rows1; i++) {
         for(int j = 0; j < cols1; j++) {
