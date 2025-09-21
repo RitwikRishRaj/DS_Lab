@@ -1,4 +1,5 @@
-/*Write a menu driven program to create a stack using dynamic array and perform the following operation using function
+/*Write a menu driven program to create a stack using dynamic array and 
+perform the following operation using function
 a. Push
 b. Pop
 c. check stack is empty or not
