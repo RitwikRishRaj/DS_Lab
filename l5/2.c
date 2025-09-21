@@ -1,6 +1,7 @@
 /*WAP in C to create a double linked list and do the following operations,
 a) insert and delete and print number of elements traversed
-b) rearrange pointers to print even elements from left to right and print odd elements from right to left and print number of elements traversed
+b) rearrange pointers to print even elements from left to right and 
+print odd elements from right to left and print number of elements traversed
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -99,13 +100,11 @@ void rearrange(struct Node* head) {
     int total = 0;
     
     printf("Even (left-right): ");
-    // Count only the actual movements for even numbers
     struct Node* temp = head;
     while (temp) {
         if (temp->val % 2 == 0) {
             printf("%d ", temp->val);
         }
-        // Count the movement to next node (except the last one)
         if (temp->next) {
             temp = temp->next;
             total++;
@@ -115,12 +114,10 @@ void rearrange(struct Node* head) {
     }
     
     printf("\nOdd (right-left): ");
-    //backwards traverse  for odd numbers
     while (temp) {
         if (temp->val % 2 != 0) {
             printf("%d ", temp->val);
         }
-        // Count the movement to previous node (except the first one)
         if (temp->prev) {
             temp = temp->prev;
             total++;

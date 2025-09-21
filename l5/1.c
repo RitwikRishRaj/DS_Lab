@@ -10,7 +10,6 @@ struct Node {
     struct Node* next;
 };
 
-// Insert at end
 struct Node* insert(struct Node* poly, int coeff, int power) {
     struct Node* newNode = malloc(sizeof(struct Node));
     newNode->coeff = coeff;
@@ -25,7 +24,7 @@ struct Node* insert(struct Node* poly, int coeff, int power) {
     return poly;
 }
 
-// Display polynomial
+
 void display(struct Node* poly) {
     while(poly) {
         if(poly->power == 0) printf("%d", poly->coeff);
@@ -37,7 +36,6 @@ void display(struct Node* poly) {
     printf("\n");
 }
 
-// Add two polynomials
 struct Node* add(struct Node* p1, struct Node* p2) {
     struct Node* result = NULL;
     
@@ -55,7 +53,6 @@ struct Node* add(struct Node* p1, struct Node* p2) {
         }
     }
     
-    // Add remaining terms
     while(p1) {
         result = insert(result, p1->coeff, p1->power);
         p1 = p1->next;
